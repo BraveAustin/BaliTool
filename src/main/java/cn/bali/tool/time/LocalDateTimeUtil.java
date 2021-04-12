@@ -20,10 +20,7 @@ public class LocalDateTimeUtil {
         if (localDateTime == null || pattern == null) {
             return null;
         }
-        if (null != localDateTime) {
-            return localDateTime.format(DateTimeFormatter.ofPattern(pattern));
-        }
-        return null;
+        return localDateTime.format(DateTimeFormatter.ofPattern(pattern));
     }
 
 }
